@@ -460,23 +460,23 @@ a:active {
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.portfolio-container h1{
+    font-family: monospace;
+    font-size: 30px;
+    text-align:center;
+}
 .portfolio-container>div {
     margin: 20px;
     padding: 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     width: calc(50% - 40px);
     /* 50% width with margins */
     max-width: 600px;
-    text-align: left;
-    transition: transform 0.3s ease;
+    text-align: center;
 }
 
-.portfolio-container>div:hover {
-    transform: translateY(-5px);
-}
 
 /* Styling for project titles */
 .portfolio-container>div h2 {
