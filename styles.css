@@ -465,6 +465,7 @@ a:active {
 .portfolio-container h1 {
     font-family: monospace;
     font-size: 30px;
+    color: black;
     text-align: center;
 }
 
