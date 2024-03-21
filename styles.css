@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
     /* border: 3px solid grey; */
 }
 
-ul {
+.navbar ul {
     list-style: none;
 }
 
@@ -466,6 +466,7 @@ a:active {
     font-family: monospace;
     font-size: 30px;
     color: black;
+    text-transform:uppercase;
     text-align: center;
 }
 
@@ -493,18 +494,17 @@ a:active {
     transform: scale(1.1);
 }
 
+
 .portfolio-item h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
 
-/* .portfolio-item a {
-    display: inline-block;
-    margin-right: 10px;
-    color: #2857a4;
-    text-decoration: none;
-} */
+.portfolio-item ul {
+    list-style-type: circle;
+    text-align: left;
+}
 .portfolio-item a {
     display: inline-block;
     margin-right: 10px;
