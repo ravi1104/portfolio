@@ -224,6 +224,7 @@ a:active {
 
 .fs2 {
     color: rgb(160, 160, 136);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -460,86 +461,70 @@ a:active {
     flex-wrap: wrap;
     justify-content: center;
 }
-.portfolio-container h1{
+
+.portfolio-container h1 {
     font-family: monospace;
     font-size: 30px;
-    text-align:center;
-}
-.portfolio-container>div {
-    margin: 20px;
-    padding: 20px;
-    /* background-color: #fff; */
-    border-radius: 8px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    width: calc(50% - 40px);
-    /* 50% width with margins */
-    max-width: 600px;
     text-align: center;
 }
 
-
-/* Styling for project titles */
-.portfolio-container>div h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
+.portfolio-container>div {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(50% - 40px);
+    max-width: 600px;
+    text-align: center;
 }
-
-/* Styling for links */
-.portfolio-container a {
-    color: #007bff;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-/* Animation for links */
-.portfolio-container a:hover {
-    text-decoration: underline;
-}
-
-/* Styling for project descriptions */
-.portfolio-container p {
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* Styling for individual project items */
+/* .portfolio-container :hover {
+    transform: translateY(-5px);
+} */
 .portfolio-item {
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: rgb(233, 221, 207);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for project titles */
+.portfolio-item:hover{
+    /* background-color: rgb(196, 175, 175);; */
+    transform: scale(1.1);
+}
+
 .portfolio-item h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
 
-/* Styling for project links */
+/* .portfolio-item a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #2857a4;
+    text-decoration: none;
+} */
 .portfolio-item a {
     display: inline-block;
     margin-right: 10px;
-    color: #007bff;
+    color: #cd4125;
+    font-size: medium;
     text-decoration: none;
 }
 
-/* Styling for project description */
+
+
 .portfolio-item p {
     color: #666;
     margin-bottom: 15px;
 }
 
-/* Hover effect for project links */
 .portfolio-item a:hover {
     text-decoration: underline;
 }
 
-
-
+/* 
+ Experience section */
 
 #Experience {
     width: 100%;
