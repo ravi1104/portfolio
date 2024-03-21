@@ -135,10 +135,10 @@ a:active {
 #profile {
     width: 450px;
     border-radius: 30%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     left: 54%;
-    top: -50vh;
+    top: 5vh;
 }
 
 .profile-info {
@@ -483,7 +483,7 @@ a:active {
 .portfolio-item {
     margin-bottom: 30px;
     padding: 20px;
-    background-color: rgb(233, 221, 207);
+    background-color: rgb(239, 236, 233);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
