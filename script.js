@@ -1,15 +1,15 @@
 
 var interval;
-let lastele=false;
+let lastele = false;
 
-let navmenutags=document.querySelectorAll('.navbar a');
-for(let i=0;i<navmenutags.length;i++){
-    navmenutags[i].addEventListener('click',function(event){
+let navmenutags = document.querySelectorAll('.navbar a');
+for (let i = 0; i < navmenutags.length; i++) {
+    navmenutags[i].addEventListener('click', function (event) {
         event.preventDefault();
-        var targetLink=this.textContent.trim().toLowerCase().replace(' ','');
-        var targetId=document.getElementById(targetLink);
-        if(i==navmenutags.length-1){
-            lastele=true;
+        var targetLink = this.textContent.trim().toLowerCase().replace(' ', '');
+        var targetId = document.getElementById(targetLink);
+        if (i == navmenutags.length - 1) {
+            lastele = true;
         }
         interval = setInterval(function () {
             scrollVertically(targetId);
@@ -22,10 +22,10 @@ function scrollVertically(targetId) {
     var targetIdCoordinates =
         targetId.getBoundingClientRect();
 
-        // console.log(targetIdCoordinates.top);
-    if (targetIdCoordinates.top <= 0||(lastele&& targetIdCoordinates.top<=125 ) ) {
+    // console.log(targetIdCoordinates.top);
+    if (targetIdCoordinates.top <= 0 || (lastele && targetIdCoordinates.top <= 125)) {
         clearInterval(interval);
-        lastele=false;
+        lastele = false;
         return;
     }
     window.scrollBy(0, 50);
@@ -81,16 +81,16 @@ function checkScroll() {
 
 
 window.addEventListener("scroll", checkScroll);
-let isNav=true;
-const tooglenav=document.getElementById('togglenav');
-const nav=document.getElementById('dropdown-nav');
-tooglenav.addEventListener('click',()=>{
-    if(isNav){
-        nav.style.display='flex';
-        isNav=false;
+let isNav = true;
+const tooglenav = document.getElementById('togglenav');
+const nav = document.getElementById('dropdown-nav');
+tooglenav.addEventListener('click', () => {
+    if (isNav) {
+        nav.style.display = 'flex';
+        isNav = false;
     }
-    else{
-        nav.style.display='none';
-        isNav=true;
+    else {
+        nav.style.display = 'none';
+        isNav = true;
     }
 })
