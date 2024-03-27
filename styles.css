@@ -283,11 +283,11 @@ a:active {
     margin: 10px;
     border-radius: 8px;
     border: 1px solid grey;
-    transition: all 0.4s;
+    transition: all 0.3s;
 }
 
 .aboutme-info div:hover {
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 
 .aboutme-info h3 {
@@ -487,6 +487,7 @@ a:active {
     background-color: rgb(239, 236, 233);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
 }
 
 .portfolio-item:hover{
