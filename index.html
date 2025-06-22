@@ -1,494 +1,919 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ravi Ranjan Yadav - Full Stack Developer Portfolio</title>
+  <meta
+    content="Ravi Ranjan Yadav is a passionate Full Stack Developer with expertise in Node.js, React.js, JavaScript, and Java. Explore my portfolio to see my work and experience."
+    name="description">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>Portfolio</title>
+  <meta
+    content="Full Stack Developer, Portfolio, Node.js, React.js, JavaScript, Java, Web Development, Programming, Software Developer"
+    name="keywords">
+
+  <meta property="og:title" content="Ravi Ranjan Yadav - Full Stack Developer Portfolio">
+  <meta property="og:description"
+    content="Explore the portfolio of Ravi Ranjan Yadav, a Full Stack Developer with expertise in Node.js, React.js, JavaScript, and more.">
+  <meta property="og:image" content="assets/img/ravi-bg.jpg">
+  <meta property="og:url" content="https://ravi1104.github.io/portfolio/">
+  <meta property="og:type" content="website">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/" rel="preconnect">
+  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body>
-    <nav>
-        <div class="navbar">
-            <div class="horizontal-list">
-                <ul class="left">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <ul class="right">
-                    <li><a href="https://www.facebook.com/ranjan.ravi11/"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/ravi-ranjan-17a0b0198/"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/ravi1104"><i class="fab fa-github"></i></a></li>
-                </ul>
-                
+<body class="index-page">
 
-            </div>
-            <div>
-                <img id="togglenav" src="bars-solid.svg" style="width: 22px;" alt="">
-                <div id="dropdown-nav" class="list">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#aboutme">About Me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
     </nav>
-    <div class="container">
-        <section id="home">
-            <div class="greet">
-                <p class="fs1">Hi I'm,</p>
-                <p class="fs3">Ravi Ranjan Yadav</p>
-                <p class="fs1">I am a Full Stack Developer</p>
-                <p class="fs2">Passionate Full Stack Developer adept at crafting compelling digital solutions.
-                    Proficient in
-                    Node.js, React.js, JavaScript, and Java, with a keen eye for detail. Excels in creating intuitive
-                    user experiences and scalable applications while staying abreast of industry trends and contributing
-                    to innovative projects</p>
 
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <img  src="assets/img/ravi-bg.jpg" alt="">
+
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h2>Ravi Ranjan Yadav</h2>
+            <p>I'm <span class="typed" data-typed-items="Full Stack Developer, Photographer">Full Stack
+                Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/ravi-ranjan-yadav/"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.instagram.com/ranjan.ravi11/"><i class="bi bi-instagram"></i></a>
+              <a href="https://github.com/ravi1104"><i class="bi bi-github"></i></a>
             </div>
-            <div class="profile-info">
-                <div>
-                    <h4>Born In</h4>
-                    <p>India</p>
-                </div>
-                <div>
-                    <h4> Experence</h4>
-                    <p>0+ Years</p>
-                </div>
-                <div>
-                    <h4>Date of Birth</h4>
-                    <p>11 June 1999</p>
-                </div>
-            </div>
-            <div id="profile">
-                <img src="profile-pic.png" alt="">
-            </div>
-        </section>
-        <section id="aboutme">
-            <div>
-                <h1 class="section-heading mb50px">
-                    <span>
-                        <i class="far fa-address-card"></i>
-                    </span>
-                    <span> About ME </span>
-                </h1>
-                <p>I Really Love To Create Amazing Products</p>
-                <p>
-                    Passionate Full Stack Developer adept at crafting compelling digital solutions. Proficient in
-                    Node.js, React.js, JavaScript, and Java, with a keen eye for detail. Excels in creating intuitive
-                    user experiences and scalable applications while staying abreast of industry trends and contributing
-                    to innovative projects
-                </p>
-                <a href="./Ravi_Ranjan_Yadav_Resume_FSD_.pdf" download="Ravi_Ranjan_Yadav_Resume_FSD_.pdf"><button class="sub-btn">Download CV</button></a>
-                
-                <div class="aboutme-info">
-                    <div>
-                        <h3><i class="fa fa-address-book"></i> Address</h3>
-                        <p>Chhapra, Bihar</p>
-                        <p>India</p>
-                    </div>
-                    <div>
-                        <h3> <i class="fa fa-envelope"></i> Email</h3>
-                        <p>rry4298@gmail.com</p>
-                        <p>192098@nith.ac.in</p>
-                    </div>
-                    <div>
-                        <h3><i class="fa fa-phone"></i> Phone</h3>
-                        <p>+91 834 0688 565</p>
-                    </div>
-                    <div>
-                        <h3><i class="fa fa-briefcase"></i> Work</h3>
-                        <p>Abc Company of XYz</p>
-                    </div>
-                </div>
-            </div>
-            <div id="description">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni earum omnis suscipit, perferendis
-                    similique vel necessitatibus explicabo totam rerum porro animi deleniti aperiam magnam? Incidunt
-                    vero cupiditate dolorem alias ea!
-                </p>
-            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        </section>
+    <!-- About Section -->
+    <section id="about" class="about section">
 
-        <section id="skills">
-            <h1 class="section-heading">
-                <span>
-                    <i class="fas fa-chalkboard-teacher"></i>
-                </span>
-                <span> SKILLS </span>
-            </h1>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>
+          Hi, I’m Ravi Ranjan Yadav — a passionate Full Stack Developer with over 1 year of hands-on experience
+          building scalable, performance-driven web applications. I specialize in working with modern web technologies
+          like
+          Node.js, React.js, JavaScript, and Java. I’m driven by a deep curiosity to solve real-world problems through
+          technology.
+          From building robust backend systems using Express.js and MongoDB to crafting engaging, responsive frontend
+          interfaces
+          with React and Next.js, I thrive in the end-to-end development lifecycle.
+        </p>
+      </div><!-- End Section Title -->
 
-            <div id="skills-container" class="skills-display">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <!-- Profile Image -->
+          <div class="col-lg-4">
+            <img src="assets/img/ravi.jpg" class="img-fluid" alt="Profile Image of Ravi Ranjan Yadav">
+          </div>
 
-                <div class="skill-progress">
-                    <div class="fifty-percent mb-blue" data-bar-width="50">
-                        <div class="skill-name">
-                            <span> C++ </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress">
-                    <div class="eighty-five-percent mb-orange" data-bar-width="85">
-                        <div class="skill-name">
-                            <span> HTML </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress">
-                    <div class="eighty-percent mb-light-purple" data-bar-width="85">
-                        <div class="skill-name">
-                            <span> CSS </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress">
-                    <div class="fifty-percent mb-teal" data-bar-width="70">
-                        <div class="skill-name">
-                            <span> Javascript </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress">
-                    <div class="fifty-percent mb-blue" data-bar-width="80">
-                        <div class="skill-name">
-                            <span> React </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress">
-                    <div class="eighty-percent mb-teal" data-bar-width="80">
-                        <div class="skill-name">
-                            <span> Java </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress">
-                    <div class="eighty-five-percent mb-light-purple" data-bar-width="85">
-                        <div class="skill-name">
-                            <span> NodeJs </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <!-- Personal Information & Bio -->
+          <div class="col-lg-8 content">
+            <h2>Full Stack Developer | Web Developer</h2>
+            <p class="fst-italic py-3">
+              Hi, I’m Ravi Ranjan Yadav — a passionate Full Stack Developer with over 1 year of hands-on experience
+              building scalable, performance-driven web applications.
+            </p>
 
-
-        </section>
-        <section id="education">
-
-
-            <div>
-                <h1 class="section-heading mb50px">
-                    <span>
-                        <i class="fas fa-graduation-cap"></i>
-                    </span>
-                    <span> Education </span>
-                </h1>
-                <div class="education-container">
-                    <div id="edu-divider">
-                        <div id="traveller">
-                            <div>
-                                <i class="fas fa-car-side"></i>
-                            </div>
-                        </div>
-                        <div class="traveller-dot">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <div class="edu-left">
-                        <h2>B.Tech 2023</h2>
-                        <p>National Institute of Technology, Hamirpur</p>
-                        <p>CGPI 7.57</p>
-
-                    </div>
-                    <div class="edu-right">
-                        <h2>Intermediate 2017</h2>
-                        <p>Army Public School Dagshai, Solan (H.P)</p>
-                        <p>Percentage: 80%</p>
-                    </div>
-                    <div class="edu-left">
-                        <h2>High School 2015</h2>
-                        <p>Army Public School Dagshai, Solan</p>
-                        <p>CGPA 9.6</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section id="portfolio">
-            <h1 class="section-heading mb50px">
-                <span>
-                    <i class="fas fa-th-list"></i>
-                </span>
-                <span> Portfolio </span>
-            </h1>
-            <div class="portfolio-container">
-                <div>
-                    <h1>FrontEnd Projects</h1>
-                    <div class="portfolio-item">
-                        <h2><i class="fab fa-react"></i> Buy Busy <a href="https://buybusy-jade.vercel.app/"
-                                target="_blank">Live</a></h2>
-                        <ul>
-                            <li>Developed BuyBusy, an e-commerce web application utilizing Redux Toolkit for efficient global state management,
-                                ensuring a seamless user experience.</li>
-                            <li>Integrated Redux Toolkit to create a centralized store for persistent state management, enhancing scalability and
-                                performance</li>
-                            <li>Implemented login functionality allowing existing users to securely access the platform.</li>
-                            <li>Enhanced user experience with dynamic product filtering via a sidebar, enabling users to filter products by price.</li>
-                            <li></li>
-                        </ul>
-
-                        <span><a href="https://github.com/ravi1104/buybusy" target="_blank"><i
-                                    class="fab fa-github"></i> Github </a></span>
-                        <span>HTML CSS REACTJS NODEJS JAVASCRIPT</span>
-
-                    </div>
-                    <div class="portfolio-item">
-                        <h2><i class="fab fa-react"></i> Photofolio <a href="https://photofolio-seven.vercel.app/"
-                                target="_blank">Live</a></h2>
-                        <p>PhotoFolio is an online photo album react app that allows users to upload, organize, and share their digital photos.</p>
-                        <span> <a href="https://github.com/ravi1104/Photofolio" target="_blank"><i
-                                    class="fab fa-github"></i>
-                                Github </a></span>
-                        <span>HTML CSS REACTJS NODEJS JAVASCRIPT</span>
-                    </div>
-                    <div class="portfolio-item">
-                        <h2><i class="fab fa-react"></i> React Todo <a href="https://react-todo-theta-ivory.vercel.app/"
-                                target="_blank">Live</a>
-                        </h2>
-                        <p>Implemented a React application fetching todo items from the provided API and displaying them. Additionally, added functionality to add, update, and delete todo items, making dummy POST, PUT, and DELETE calls to the API and updating the React state accordingly.</p>
-                        <span> <a href="https://youtu.be/DV9GaFvuIlA?si=e5QTUMDNx9J1jW6I" target="_blank"><i
-                                    class="fab fa-youtube"></i> Walk Through Video</a></span>
-                        <span>HTML CSS REACTJS NODEJS JAVASCRIPT</span>
-                    </div>
-                    <div class="portfolio-item">
-                        <h2><i class="fab fa-react"></i> Habit Tracker <a
-                                href="https://habit-tracker-theta-ten.vercel.app/" target="_blank">Live</a>
-                        </h2>
-                        <ul>
-                            <li>Developed a Habit Tracker React app using Redux and React Router for state management and navigation</li>
-                            <li>Implemented features to add and track multiple habits with daily statuses (Done, Not Done, None), enhancing user
-                                control and flexibility.</li>
-                            <li>Designed intuitive views to display current habits and a seven-day history, allowing users to monitor and analyze their
-                                progress easily</li>
-                            <li>Ensured code quality with proper naming conventions, indentation, and folder structure, documented in a comprehensive
-                                Readme.md file</li>
-                            </ul>
-                        <span><a href="https://youtu.be/OMAwXHIaCEY?si=gZb9K17tIRW27HV5" target="_blank"><i
-                                    class="fab fa-youtube"></i> Walk Through Video</a></span>
-                        <span>HTML CSS REACTJS NODEJS JAVASCRIPT</span>
-                    </div>
-                    <div class="portfolio-item">
-                        <h2><i class="fa fa-gamepad"></i> Ping Pong <a href="https://ravi1104.github.io/ping-pong/"
-                                target="_blank">Live</a></h2>
-                        <p>Developed a simple ping pong game using JavaScript and CSS, featuring a visually appealing design. The game includes a ball and a paddle, with the objective of hitting the ball with the paddle to score points.</p>
-                        <a href="https://github.com/ravi1104/ping-pong/" target="_blank"><i class="fab fa-github"></i>
-                            Github</a>
-                        <span>HTML CSS REACTJS NODEJS JAVASCRIPT</span>
-                    </div>
-                    <div class="portfolio-item">
-                        <h2><i class="fab fa-python"></i> Django Quiz App <a href="https://quiz11.pythonanywhere.com/quiz_app/"
-                                target="_blank">Live</a></h2>
-                        <p>
-                            Created a Django web application utilizing a dummy API to retrieve questions along with options for users to answer. The app implements a quiz-like interface where users can select their answers. Each correct answer increments the score by 1, and the quiz ends when the score reaches 10. Users can engage with the quiz by selecting options until the score limit is reached.</p>
-                    </div>
-                </div>
-                <div>
-                    <h1>Backend Projects</h1>
-                    <div class="portfolio-item">
-                        <h2><i class="fab fa-node-js"></i> Issue Tracker <a
-                                href="" target="_blank"><i class="fab fa-youtube"></i> Youtube</a>
-                        </h2>
-                        <ul>
-                            <li>Developed a Node.js and EJS-based application for issue tracking, inspired by platforms like GitHub.</li>
-                            <li>Implemented a user-friendly UI with features including project listing, creation, and detailed project views.</li>
-                            <li>Users can filter projects by multiple labels, authors, and search by title/description for efficient issue management.</li>
-                            <li>Created functionality for users to create new projects and issues, with options to add titles, descriptions, labels, and authors.</li>
-                        </ul>
-                        <span>
-                            <a href="https://youtu.be/xztCJ-VFi9Y?si=OyVCAlqxkinvtd-E" target="_blank"><i
-                                    class="fab fa-youtube"></i> Walk Through Video</a></span>
-                        <span>HTML CSS REACTJS NODEJS JAVASCRIPT</span>
-                    </div>
-                    <div class="portfolio-item">
-                        <h2><i class="fab fa-node-js"></i> Employee Review System <a
-                                href="https://glamorous-pear-cloak.cyclic.app/" target="_blank">Live</a></h2>
-                        <ul>
-                            <li>Developed an Employee Reviews Management System enabling employees to give peer performance feedback. The system
-                                provides administrators with comprehensive tools for managing feedback, employee assignments, and promotions</li>
-                            <li>User Authentication: Secure login system for employees and admins.</li>
-                            <li>Employees: Submit feedback of peers assigned by admins and can view received and submitted feedbacks.</li>
-                            <li>Admin’s: Have access to an admin dashboard to oversee all reviews, give, assign feedback tasks, manage employees and
-                                promotions</li>
-                        </ul>
-                        <a href="https://youtu.be/RfvXB-VHIQI?si=hRKU9VcsIuNBoZS6" target="_blank"><i
-                                class="fab fa-youtube"></i> Walk Through Video</a>
-                        <span>HTML CSS REACTJS NODEJS JAVASCRIPT</span>
-                    </div>
-                    <!-- <div class="portfolio-item">
-                        <h2><i class="fab fa-node-js"></i> Employee Review System <a
-                                href="https://glamorous-pear-cloak.cyclic.app/" target="_blank">Live</a></h2>
-                        <p>
-                            Created an Employee Reviews Management System facilitating peer feedback for employees and comprehensive admin tools for feedback management, employee assignments, and promotions. Includes secure user authentication, employee feedback submission, viewing of received and submitted feedback, and admin dashboard for review oversight, feedback assignment, employee management, and promotions.
-                        </p>
-                        <span>
-                            <a href="https://youtu.be/RfvXB-VHIQI?si=hRKU9VcsIuNBoZS6" target="_blank"><i
-                                    class="fab fa-youtube"></i> Walk Through Video</a>
-                        </span>
-                        <span>HTML CSS REACTJS NODEJS JAVASCRIPT</span>
-                    </div> -->
-                    <div class="portfolio-item">
-                        <h2><i class="fab fa-node-js"></i> Social Media API <a href="https://frail-life-jacket-frog.cyclic.app/api-docs/"
-                                target="_blank">Live</a></h2>
-                        <ul>
-                            <li>Developed a comprehensive Social Media API using Node.js, mirroring popular social media platforms, and implemented
-                                robust authorization controls to ensure users can only perform actions aligned with their assigned roles
-                            </li>
-                            <li>
-                                User Management : Developed a user management system encompassing secure user registration, authentication, and
-                                profile management, enabling account creation, secure login, and profile updates with pertinent information.
-                            </li>
-                            <li>
-                                User Interface Api: Designed an interactive user interface allowing users to seamlessly create image posts, with features
-                                enabling liking and commenting on posts, fostering user engagement and social interaction within the platform 
-                            </li>
-                        </ul>
-                        <span>
-                            <a href="https://github.com/ravi1104/Social-Media-API" target="_blank"><i
-                                    class="fab fa-github"></i> Github</a>
-                        </span>
-                        <span>HTML CSS REACTJS NODEJS JAVASCRIPT</span>
-                    </div>
-                    <div class="portfolio-item">
-                        <h2><i class="fab fa-node-js"></i>Hospital RestfulAPI <a href="https://youtu.be/tPXPJznhD-4?si=1TSVMubsXrV2jYoz"
-                                target="_blank"><i class="fab fa-youtube"></i> Youtube</a></h2>
-                        <ul>
-                            <li>Developed a Hospital API tailored for managing COVID-19 patient data and doctor interactions</li>
-                            <li>Created functionalities for doctors to register COVID-19 patients, facilitating efficient data entry and patient
-                                management. Implemented features for doctors to generate comprehensive patient reports, detailing test results,
-                                quarantine status, and treatment plans.</li>
-                            <li>Implemented robust authentication mechanisms using JSON Web Tokens (JWT) to ensure secure doctor authentication.</li>
-                        </ul>
-                        <span><a href="https://github.com/ravi1104/hospital-api/" target="_blank"> <i
-                                    class="fab fa-github"></i> Github</a></span>
-                        <span>HTML CSS REACTJS NODEJS JAVASCRIPT</span>
-                    </div>
-                    <div class="portfolio-item">
-                        <h2><i class="fa fa-gamepad"></i> ChatterUp <a href="https://ravi1104.github.io/ChatterUp/"
-                                target="_blank">Live</a></h2>
-                        <ul>
-                            <li>Developed a group chatting application with frontend and backend with cool ui and design using socket.io.</li>
-                            <li>User can enter their name and random pic is aasigned and then app loads and their name displayed at top can see all
-                                previous chats of users and send messages.</li>
-                            <li>Users, can see the online users on the screen and can also see who is typing currently</li>
-                        </ul>
-                        <span><a href="https://github.com/ravi1104/hospital-api/" target="_blank"><i
-                                    class="fab fa-github"></i> Github</a></span>
-                        <span>HTML CSS REACTJS NODEJS JAVASCRIPT</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-
-        <section id="contact">
-            <h1 class="section-heading mb50px">
-                <span>
-                    <i class="far fa-address-card"></i>
-                </span>
-                <span> Contact </span>
-            </h1>
-            <div id="contact-container">
-
-                <div id="contact-form-container">
-                    <form id="contact-form">
-                        <input id="input-name" name="name" type="text" placeholder="Your Name">
-                        <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
-                        <textarea id="input-message" name="input-message" rows="2" cols=40
-                            placeholder="Message"></textarea>
-                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
-                    </form>
-                </div>
-                <div id="my-details-container">
-
-                    <h3> Get In touch </h3>
-                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-
-                    <h3> My Address </h3>
-                    <div class="my-details-info-container">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Bihar, India</span>
-                    </div>
-                    <div class="my-details-info-container">
-                        <i class="fas fa-mobile-alt"></i>
-                        <span>8340688565</span>
-                    </div>
-                    <div class="my-details-info-container">
-                        <i class="far fa-envelope"></i>
-                        <span>rry4298@gmail.com</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center social-icons horizontal-list">
-
-                <ul class="no-list-style ">
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/ravi-ranjan-17a0b0198/" target="_blank">
-                            <i style="color: white;" class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://github.com/ravi" target="_blank">
-                            <i style="color: white;" class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" target="_blank">
-                            <i style="color: white;" class="fab fa-google-plus-g"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.facebook.com/ranjan.ravi11/" target="_blank">
-                            <i style="color: white;" class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" target="_blank">
-                            <i style="color: white;" class="fab fa-quora"></i>
-                        </a>
-                    </li>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>11 June 1999</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a
+                        href="https://ravi1104.github.io/portfolio/" target="_blank">https://ravi1104.github.io/portfolio/</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8340688565</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Chapra, Bihar</span></li>
                 </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech (Electrical
+                      Engineering)</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a
+                        href="mailto:rry4298@gmail.com">rry4298@gmail.com</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
             </div>
 
-        </section>
+            <p class="py-3">
+              I hold a B.Tech in Electrical Engineering from NIT Hamirpur, and I’m always striving to grow through
+              continuous learning, problem-solving, and collaboration. My goal is to build applications that not only
+              serve
+              the needs of users but also inspire innovation in the development community.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-emoji-smile"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Happy Clients</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-journal-code"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Completed Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-clock-history"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Coding Hours</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-award"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Certifications</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Proficient in modern web development technologies and tools with a strong focus on MERN stack, RESTful APIs,
+          and responsive design.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML5</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>CSS3 / Tailwind / Bootstrap</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript (ES6+)</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>React.js</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Node.js & Express.js</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>MongoDB & Mongoose</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Git & GitHub</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>REST APIs & JSON</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>I am a dedicated and passionate Full Stack Developer with a strong foundation in MERN stack technologies.
+          With hands-on experience in both academic and real-world projects, I specialize in building scalable web
+          applications and APIs. I also serve as a Teaching Assistant, helping others learn modern web development
+          practices.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row">
+
+          <!-- Left Column -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Ravi Ranjan Yadav</h4>
+              <p><em>Full Stack Developer focused on building scalable, efficient, and user-friendly web applications.
+                  Strong background in MERN stack, RESTful APIs, and responsive design.</em></p>
+              <ul>
+                <li>New Delhi, India</li>
+                <li>+91-8340688565</li>
+                <li>rry4298@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Technology in Computer Science</h4>
+              <h5>2019 - 2023</h5>
+              <p><em>XYZ University, India</em></p>
+              <p>Graduated with distinction. Specialized in full-stack web development, database systems, and cloud
+                computing.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Web Development Certification</h4>
+              <h5>2022</h5>
+              <p><em>freeCodeCamp / Udemy</em></p>
+              <p>Completed extensive hands-on training in HTML, CSS, JavaScript, React, Node.js, MongoDB, and Express.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+
+            <div class="resume-item">
+              <h4>Full Stack Developer (Intern)</h4>
+              <h5>2023 - Present</h5>
+              <p><em>TechNova Solutions, Remote</em></p>
+              <ul>
+                <li>Developed and deployed full-stack web applications using the MERN stack</li>
+                <li>Built RESTful APIs and integrated third-party services like Stripe and Firebase</li>
+                <li>Collaborated with frontend and backend teams via GitHub and Jira</li>
+                <li>Improved application performance by 30% through code optimization and lazy loading</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Teaching Assistant – Web Development</h4>
+              <h5>2022 - 2023</h5>
+              <p><em>XYZ University / Online Coding Bootcamp</em></p>
+              <ul>
+                <li>Assisted in instructing 100+ students in HTML, CSS, JavaScript, and React</li>
+                <li>Created coding exercises and led weekly doubt-clearing sessions</li>
+                <li>Reviewed and graded assignments and projects with constructive feedback</li>
+                <li>Maintained GitHub repositories for course materials</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Here are some of my recent projects in web development. I've worked on both front-end and back-end
+          technologies to create full-stack solutions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Card</li>
+            <li data-filter=".filter-branding">Web</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- Buy Busy (E-commerce) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/buy-busy.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://github.com/ravi1104/buybusy" target="_blank">Buy Busy</a></h4>
+                <p>An e-commerce web application using Redux Toolkit for state management, dynamic product filtering,
+                  and secure login functionality.</p>
+                <a href="https://github.com/ravi1104/buybusy" target="_blank" title="Buy Busy" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Photofolio (Photo Album) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/portfolio//photofolio.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://github.com/yourusername/photofolio" target="_blank">Photofolio</a></h4>
+                <p>An online photo album react app to upload, organize, and share digital photos.</p>
+                <a href="https://github.com/yourusername/photofolio" title="Photofolio" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- React Todo App -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/portfolio/todo.png" class="img-fluid"
+                alt="React Todo App Screenshot">
+              <div class="portfolio-info">
+                <h4>
+                  <a href="https://github.com/yourusername/react-todo" target="_blank">React Todo</a>
+                </h4>
+                <p>
+                  A React-based Todo app with full CRUD functionality. It fetches tasks from an API and allows adding,
+                  updating, and deleting todos with dummy API interactions. Built using ReactJS, Node.js, HTML, CSS, and
+                  JavaScript.
+                </p>
+                <p>
+                  <strong>Technologies:</strong> HTML, CSS, ReactJS, Node.js, JavaScript
+                </p>
+                <a href="https://github.com/yourusername/react-todo" title="View Source on GitHub" class="details-link"
+                  target="_blank">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
+                <a href="https://youtu.be/DV9GaFvuIlA" title="Watch Walkthrough Video" class="details-link"
+                  target="_blank">
+                  <i class="bi bi-play-circle"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+
+            <!-- Habit Tracker -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://github.com/yourusername/habit-tracker" target="_blank">Habit Tracker</a></h4>
+                <p>A habit tracker built with React and Redux, allowing users to track daily habits and monitor
+                  progress.</p>
+                <a href="https://github.com/yourusername/habit-tracker" title="Habit Tracker" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Ping Pong Game -->
+            <!-- Ping Pong Game -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/portfolio/ping-pong.png" class="img-fluid"
+                alt="Ping Pong Game Screenshot">
+              <div class="portfolio-info">
+                <h4>
+                  <a href="https://github.com/ravi1104/ping-pong" target="_blank">Ping Pong Game</a>
+                </h4>
+                <p>
+                  Developed a fun and interactive ping pong game using JavaScript and CSS, featuring smooth paddle
+                  movement and a visually engaging design. Try to hit the ball and keep the rally going!
+                </p>
+                <p>
+                  <strong>Technologies:</strong> HTML, CSS, JavaScript
+                </p>
+                <a href="https://github.com/ravi1104/ping-pong" title="View Source on GitHub" class="details-link"
+                  target="_blank">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
+                <a href="https://ravi1104.github.io/ping-pong/" title="Play Live Demo" class="details-link"
+                  target="_blank">
+                  <i class="bi bi-play-circle"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+
+            <!-- Django Quiz App -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/portfolio/quiz.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://github.com/yourusername/django-quiz" target="_blank">Django Quiz App</a></h4>
+                <p>A quiz application built with Django that lets users answer questions and track scores.</p>
+                <a href="https://github.com/yourusername/django-quiz" title="Django Quiz App" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Issue Tracker (Back-End Project) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/issue.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://github.com/yourusername/issue-tracker" target="_blank">Issue Tracker</a></h4>
+                <p>A Node.js and EJS-based issue tracking application with project creation and issue management
+                  features.</p>
+                <a href="https://github.com/yourusername/issue-tracker" title="Issue Tracker" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Employee Review System -->
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://github.com/yourusername/employee-review" target="_blank">Employee Review System</a>
+                </h4>
+                <p>A system for employees to provide peer reviews and administrators to manage feedback and promotions.
+                </p>
+                <a href="https://github.com/yourusername/employee-review" title="Employee Review System"
+                  class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+            <!-- End Portfolio Item -->
+            <!-- Social Media API -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/portfolio/social-media-api.png" class="img-fluid"
+                alt="Social Media API Screenshot">
+              <div class="portfolio-info">
+                <h4>
+                  <a href="https://github.com/yourusername/social-media-api" target="_blank">Social Media API</a>
+                </h4>
+                <p>
+                  A fully-featured social media API developed with Node.js. Includes secure role-based authorization and
+                  full user management. Allows users to register, log in, manage profiles, and interact through posts,
+                  likes, and comments.
+                </p>
+                <!-- <ul style="padding-left: 20px;">
+                  <li><strong>User Management:</strong> Secure registration, authentication, and profile updates.</li>
+                  <li><strong>Authorization:</strong> Role-based controls restricting access to permitted actions.</li>
+                  <li><strong>Post Features:</strong> Users can create image posts, like, and comment—promoting social
+                    interaction.</li>
+                </ul> -->
+
+                <!-- GitHub and Live API Links -->
+                <a href="https://github.com/yourusername/social-media-api" title="View Source on GitHub"
+                  class="details-link" target="_blank">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
+                <a href="https://social-media-api-houd.onrender.com/api-docs/" title="View API Docs"
+                  class="details-link" target="_blank">
+                  <i class="bi bi-play-circle"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>I offer practical, high-quality services in web development, mentoring, and deployment, combining strong
+          technical expertise with a hands-on approach to problem-solving and clean code delivery.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Full Stack Web Development -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3>Full Stack Web Development</h3>
+              <p>End-to-end development using MERN stack (MongoDB, Express, React, Node.js), creating scalable,
+                responsive, and optimized web applications.</p>
+            </div>
+          </div>
+
+          <!-- Frontend Development -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <div class="icon">
+                <i class="bi bi-aspect-ratio"></i>
+              </div>
+              <h3>Frontend Development</h3>
+              <p>Building clean and intuitive UIs with React, JavaScript, Bootstrap, and HTML/CSS to ensure a seamless
+                user experience across all devices.</p>
+            </div>
+          </div>
+
+          <!-- Backend Development -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <div class="icon">
+                <i class="bi bi-server"></i>
+              </div>
+              <h3>Backend APIs & Integrations</h3>
+              <p>Designing secure, high-performance RESTful APIs with Node.js, Express, and integrating databases using
+                MongoDB.</p>
+            </div>
+          </div>
+
+          <!-- Deployment & Hosting -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-red position-relative">
+              <div class="icon">
+                <i class="bi bi-cloud-upload"></i>
+              </div>
+              <h3>Deployment & DevOps</h3>
+              <p>Deploying full stack projects on platforms like Render, Netlify, and Vercel with environment management
+                and CI/CD practices.</p>
+            </div>
+          </div>
+
+          <!-- Mentorship & Code Review -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item item-indigo position-relative">
+              <div class="icon">
+                <i class="bi bi-person-check"></i>
+              </div>
+              <h3>Mentorship & Doubt Support</h3>
+              <p>Helping students strengthen their coding foundations as a Teaching Assistant at Coding Ninjas. I assist
+                with debugging, concepts, and structured learning.</p>
+            </div>
+          </div>
+
+          <!-- Freelance Projects -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item item-pink position-relative">
+              <div class="icon">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <h3>Freelance & Custom Solutions</h3>
+              <p>Delivering tailor-made software solutions for small businesses and startups—clean code, on-time
+                delivery, and post-launch support included.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Here’s what colleagues, mentors, and students say about working with me.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
+          <div class="swiper-wrapper">
+
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Ravi's deep understanding of full stack development and his ability to adapt to new
+                          technologies quickly made him an invaluable asset to our team at AllDomainSoft. He
+                          consistently delivered high-quality, scalable applications.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Jaspreet Singh</h3>
+                      <h4>Senior Developer, AllDomainSoft</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>As a teaching assistant, Ravi was incredibly supportive and clear in his explanations. His
+                          mentorship helped me and many others strengthen our skills in JavaScript, React, and backend
+                          development.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Priya Mehta</h3>
+                      <h4>Student, Coding Ninjas</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Ravi's attention to detail and clean code practices stood out during our collaborative
+                          project. His ability to integrate APIs and troubleshoot complex issues was truly
+                          impressive.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Deepak Kumar</h3>
+                      <h4>Frontend Engineer, Freelance Partner</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Have a project in mind or just want to connect? Feel free to drop a message!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Gurgaon, Haryana, India</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Me</h3>
+                <p>+91 83406 88565</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p>rry4298@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="https://themewagon.github.io/MyResume/forms/contact.php" method="post" class="php-email-form"
+              data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+
+  </main>
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Ravi Ranjan Yadav</h3>
+      <p>Passionate Full Stack Developer skilled in building scalable web apps using React.js, Node.js, and Java. Always
+        learning, always building.</p>
+
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="skype:live:your_skype_id?chat"><i class="bi bi-skype"></i></a>
+        <a href="https://linkedin.com/in/your-linkedin-username" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+      <div class="container mt-4">
+        <div class="copyright">
+          &copy; <strong class="px-1 sitename">Ravi Ranjan Yadav</strong> — All Rights Reserved
+        </div>
+        <div class="credits">
+          Built with ❤️ using HTML, CSS & JavaScript · Inspired by <a
+            href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
     </div>
-    <script src="script.js" defer></script>
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
+
+<!-- Mirrored from themewagon.github.io/MyResume/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Jun 2025 14:17:42 GMT -->
 
 </html>
