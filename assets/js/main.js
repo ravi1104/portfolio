@@ -1,7 +1,8 @@
 (function() {
   "use strict";
   const headerToggleBtn = document.querySelector('.header-toggle');
-
+  const ageSpan= document.querySelector('.age');
+  ageSpan.innerHTML = new Date().getFullYear() - 1999;
   function headerToggle() {
     document.querySelector('#header').classList.toggle('header-show');
     headerToggleBtn.classList.toggle('bi-list');
